@@ -9,7 +9,7 @@ public class Check {
 
         for(Token t : tokens.getTokens())
             if(t.getType() >= 0) {
-                System.out.printf("[%d] <%s>\"%s\"\n", 
+                System.out.printf("[%3d] [%-15s] \"%s\"\n", 
                         t.getTokenIndex(),
                         JavaLexer.tokenNames[t.getType()],
                         t.getText());
